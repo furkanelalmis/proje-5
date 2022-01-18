@@ -1,476 +1,1037 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
     <style>
-        .body {
-            margin: 0px !important;
-            padding: 0px !important;
-        }
-        
-        .container {
-            width: 100% !important;
-        }
-        
-        .image {
-            width: 100% !important;
-        }
-        
-        .img {
-            width: 100% !important;
-        }
-        
-        .item-2 {
-            text-align: center !important;
-            width: 100% !important;
-        }
-        
-        .font-size {
-            font-size: 70px !important;
-        }
-        
-        .item {
-            position: absolute !important;
-            bottom: 10% !important;
-            left: 25% !important;
-        }
-        
-        .color {
-            color: orange !important;
-        }
-        
-        .width {
-            width: 100% !important;
-            list-style: none !important;
-            color: black !important;
-        }
-        
-        .font-size-1 {
-            font-size: 90px !important;
-            margin-top: 100px !important;
-        }
-        
-        .btn-1 {
-            width: 100% !important;
-            height: 100% !important;
-            display: flex !important;
-        }
-        
-        .btn-2 {
-            font-size: 18px !important;
-            width: 50% !important;
-            color: white !important;
-            background-color: orange !important;
-            margin-right: 5px !important;
-            cursor: pointer !important;
-        }
-        
-        .btn-3 {
-            font-size: 18px !important;
-            width: 50% !important;
-            color: white !important;
-            background-color: orange !important;
-            margin-left: 70px !important;
-            cursor: pointer !important;
-        }
-        
-        .btn-3:hover {
-            background-color: black !important;
-            border-radius: 40px !important;
-            transition: 0.5s !important;
-        }
-        
-        .btn-4 {
-            font-size: 18px !important;
-            width: 50% !important;
-            color: white !important;
-            background-color: orange !important;
-            margin-left: 70px !important;
-            cursor: pointer !important;
-        }
-        
-        .btn-4:hover {
-            background-color: black !important;
-            border-radius: 40px !important;
-            transition: 0.5s !important;
-        }
-        
-        .btn-5 {
-            font-size: 18px !important;
-            width: 50% !important;
-            color: white !important;
-            background-color: orange !important;
-            margin-left: 70px !important;
-            cursor: pointer !important;
-        }
-        
-        .btn-5:hover {
-            background-color: black !important;
-            border-radius: 40px !important;
-            transition: 0.5s !important;
-        }
-        
-        .btn-6 {
-            font-size: 18px !important;
-            width: 50% !important;
-            color: white !important;
-            background-color: orange !important;
-            margin-left: 70px !important;
-            cursor: pointer !important;
-        }
-        
-        .btn-6:hover {
-            background-color: black !important;
-            border-radius: 40px !important;
-            transition: 0.5s !important;
-        }
-        
-        .btn-7 {
-            font-size: 18px !important;
-            width: 50% !important;
-            margin-left: 70px !important;
-            cursor: pointer !important;
-            color: white !important;
-            background-color: orange !important;
-        }
-        
-        .btn-7:hover {
-            background-color: black !important;
-            border-radius: 40px !important;
-            transition: 0.5s !important;
-        }
-        
-        .mb-2 {
-            margin-bottom: 40px !important;
-            font-size: 30px !important;
-        }
-        
-        .btn {
-            font-size: 20px !important;
-            border-radius: 30px !important;
-            background-color: orange !important;
-            color: white !important;
-            border: none !important;
-            cursor: pointer !important;
-            transition: 0.5s !important;
-            padding: 20px !important;
-        }
-        
-        .btn:hover {
-            background-color: black !important;
-        }
-        
-        .font-size-2 {
-            font-size: 70px !important;
-            text-align: center !important;
-            color: orange !important;
-        }
-        
-        .mb-5 {
-            margin-bottom: 0% !important;
-            padding: 0px !important;
-            text-align: center !important;
-            font-size: 25px !important;
-        }
-        
-        .hr {
-            display: block;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
-            margin-left: 30px !important;
-            margin-right: 30px !important;
-            border-style: inset;
-            border-width: 1px;
-        }
-        
-        .item-3 {
-            width: 100% !important;
-        }
-        
-        .img-2 {
-            background-image: url(/İmages/2.jpg) !important;
-            padding: 0px !important;
-            position: relative !important;
-            margin-left: 5% !important;
-            width: 50% !important;
-            margin-top: 5% !important;
-        }
-        
-        .item-4 {
-            background: #f2f2f2 !important;
-            position: absolute !important;
-            width: 25% !important;
-            padding: 1em !important;
-            right: 30% !important;
-            top: 160% !important;
-        }
-        
-        .font-size-3 {
-            font-size: 50px !important;
-        }
-        
-        .font-size-4 {
-            font-size: 20px !important;
-            padding-right: 10px !important;
-            padding-left: 10px !important;
-        }
-        
-        .card {
-            background: rgb(204, 202, 202) !important;
-            width: 100% !important;
-            text-align: center !important;
-        }
-        
-        .back-ground {
-            width: 100% !important;
-        }
-        
-        .font-size-5 {
-            font-size: 70px !important;
-        }
-        
-        .ıcon-right {
-            width: 70% !important;
-            background-color: white !important;
-            padding: 30px 30px 30px 30px !important;
-            margin-left: 20% !important;
-            margin-bottom: 10% !important;
-        }
-        
-        .ıcon-left {
-            background-color: orange !important;
-            color: white !important;
-            text-align: center !important;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
-            font-size: 30px !important;
-            width: 30% !important;
-            margin-left: 110px !important;
-        }
-        
-        .font-size-6 {
-            font-size: 20px !important;
-            letter-spacing: 2px !important;
-        }
-        
-        .font-size-7 {
-            font-size: 20px !important;
-        }
-        
-        .card-1 {
-            background-color: rgb(204, 202, 202) !important;
-            width: 100% !important;
-            text-align: center !important;
-        }
-        
-        .back-gorund-2 {
-            width: 100% !important;
-        }
-        
-        .ıcon-right-2 {
-            width: 70% !important;
-            background-color: white !important;
-            padding: 30px 30px 30px 30px !important;
-            margin-left: 8% !important;
-            margin-bottom: 10% !important;
-        }
-        
-        .ıcon-left-2 {
-            background-color: orange !important;
-            color: white !important;
-            text-align: center !important;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
-            font-size: 30px !important;
-            width: 30% !important;
-            margin-left: 110px !important;
-        }
-        
-        .font-size-8 {
-            font-size: 20px !important;
-            letter-spacing: 2px !important;
-        }
-        
-        .font-size-9 {
-            font-size: 20px !important;
-        }
-        
-        .card-2 {
-            background-color: rgb(204, 202, 202) !important;
-            width: 100% !important;
-            text-align: center !important;
-        }
-        
-        .back-ground-3 {
-            width: 100% !important;
-        }
-        
-        .ıcon-right-3 {
-            width: 70% !important;
-            background-color: white !important;
-            padding: 30px 30px 30px 30px !important;
-            margin-bottom: 10% !important;
-            margin-right: 10% !important;
-        }
-        
-        .ıcon-left-3 {
-            background-color: orange !important;
-            color: white !important;
-            text-align: center !important;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
-            font-size: 30px !important;
-            width: 30% !important;
-            margin-left: 110px !important;
-            text-align: center !important;
-        }
-        
-        .font-size-10 {
-            font-size: 20px !important;
-            letter-spacing: 2px !important;
-        }
-        
-        .font-size-11 {
-            font-size: 20px !important;
-        }
-        
-        .card-3 {
-            background-color: rgb(204, 202, 202) !important;
-            width: 100% !important;
-            text-align: center !important;
-        }
-        
-        .back-ground-4 {
-            width: 100% !important;
-        }
-        
-        .ıcon-right-4 {
-            width: 70% !important;
-            background-color: white!important;
-            padding: 30px 30px 30px 30px !important;
-            margin-bottom: 10% !important;
-            margin-right: 10% !important;
-        }
-        
-        .ıcon-left-4 {
-            background-color: orange!important;
-            color: white !important;
-            text-align: center !important;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
-            font-size: 30px !important;
-            width: 30% !important;
-            margin-left: 110px !important;
-            text-align: center !important;
-        }
-        
-        .font-size-12 {
-            font-size: 20px !important;
-            letter-spacing: 1px !important;
-        }
-        
-        .font-size-13 {
-            font-size: 20px !important;
-        }
-    </style>
-</head>
+      .body {
+        margin: 0px !important;
+        padding: 0px !important;
+      }
 
-<body>
+      .container {
+        width: 100% !important;
+      }
+
+      .image {
+        width: 100% !important;
+      }
+
+      .img {
+        width: 100% !important;
+      }
+
+      .item-2 {
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      .font-size {
+        font-size: 70px !important;
+      }
+
+      .item {
+        position: absolute !important;
+        bottom: 10% !important;
+        left: 25% !important;
+      }
+
+      .color {
+        color: orange !important;
+      }
+
+      .width {
+        width: 100% !important;
+        list-style: none !important;
+        color: black !important;
+      }
+
+      .font-size-1 {
+        font-size: 90px !important;
+        margin-top: 100px !important;
+      }
+
+      .btn-1 {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex !important;
+      }
+
+      .btn-2 {
+        font-size: 18px !important;
+        width: 50% !important;
+        color: white !important;
+        background-color: orange !important;
+        margin-right: 5px !important;
+        cursor: pointer !important;
+      }
+
+      .btn-3 {
+        font-size: 18px !important;
+        width: 50% !important;
+        color: white !important;
+        background-color: orange !important;
+        margin-left: 70px !important;
+        cursor: pointer !important;
+      }
+
+      .btn-3:hover {
+        background-color: black !important;
+        border-radius: 40px !important;
+        transition: 0.5s !important;
+      }
+
+      .btn-4 {
+        font-size: 18px !important;
+        width: 50% !important;
+        color: white !important;
+        background-color: orange !important;
+        margin-left: 70px !important;
+        cursor: pointer !important;
+      }
+
+      .btn-4:hover {
+        background-color: black !important;
+        border-radius: 40px !important;
+        transition: 0.5s !important;
+      }
+
+      .btn-5 {
+        font-size: 18px !important;
+        width: 50% !important;
+        color: white !important;
+        background-color: orange !important;
+        margin-left: 70px !important;
+        cursor: pointer !important;
+      }
+
+      .btn-5:hover {
+        background-color: black !important;
+        border-radius: 40px !important;
+        transition: 0.5s !important;
+      }
+
+      .btn-6 {
+        font-size: 18px !important;
+        width: 50% !important;
+        color: white !important;
+        background-color: orange !important;
+        margin-left: 70px !important;
+        cursor: pointer !important;
+      }
+
+      .btn-6:hover {
+        background-color: black !important;
+        border-radius: 40px !important;
+        transition: 0.5s !important;
+      }
+
+      .btn-7 {
+        font-size: 18px !important;
+        width: 50% !important;
+        margin-left: 70px !important;
+        cursor: pointer !important;
+        color: white !important;
+        background-color: orange !important;
+      }
+
+      .btn-7:hover {
+        background-color: black !important;
+        border-radius: 40px !important;
+        transition: 0.5s !important;
+      }
+
+      .mb-2 {
+        margin-bottom: 40px !important;
+        font-size: 30px !important;
+      }
+
+      .btn {
+        font-size: 20px !important;
+        border-radius: 30px !important;
+        background-color: orange !important;
+        color: white !important;
+        border: none !important;
+        cursor: pointer !important;
+        transition: 0.5s !important;
+        padding: 20px !important;
+      }
+
+      .btn:hover {
+        background-color: black !important;
+      }
+
+      .font-size-2 {
+        font-size: 70px !important;
+        text-align: center !important;
+        color: orange !important;
+      }
+
+      .mb-5 {
+        margin-bottom: 0% !important;
+        padding: 0px !important;
+        text-align: center !important;
+        font-size: 25px !important;
+      }
+
+      .hr {
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        border-style: inset;
+        border-width: 1px;
+      }
+
+      .item-3 {
+        width: 100% !important;
+      }
+
+      .img-2 {
+        background-image: url(/İmages/2.jpg) !important;
+        padding: 0px !important;
+        position: relative !important;
+        margin-left: 5% !important;
+        width: 50% !important;
+        margin-top: 5% !important;
+      }
+
+      .item-4 {
+        background: #f2f2f2 !important;
+        position: absolute !important;
+        width: 25% !important;
+        padding: 1em !important;
+        right: 30% !important;
+        top: 180% !important;
+      }
+
+      .font-size-3 {
+        font-size: 50px !important;
+      }
+
+      .font-size-4 {
+        font-size: 20px !important;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+      }
+
+      .card {
+        background: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .back-ground {
+        width: 100% !important;
+      }
+
+      .font-size-5 {
+        font-size: 70px !important;
+        color: orange !important;
+      }
+
+      .ıcon-right {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-left: 20% !important;
+        margin-bottom: 10% !important;
+      }
+
+      .ıcon-left {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+      }
+
+      .font-size-6 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+
+      .font-size-7 {
+        font-size: 20px !important;
+      }
+
+      .card-1 {
+        background-color: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .back-gorund-2 {
+        width: 100% !important;
+      }
+
+      .ıcon-right-2 {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-left: 8% !important;
+        margin-bottom: 10% !important;
+      }
+
+      .ıcon-left-2 {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+      }
+
+      .font-size-8 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+
+      .font-size-9 {
+        font-size: 20px !important;
+      }
+
+      .card-2 {
+        background-color: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+
+      .back-ground-3 {
+        width: 100% !important;
+      }
+
+      .ıcon-right-3 {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-bottom: 10% !important;
+        margin-right: 10% !important;
+      }
+
+      .ıcon-left-3 {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+        text-align: center !important;
+      }
+
+      .font-size-10 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+
+      .font-size-11 {
+        font-size: 20px !important;
+      }
+      .card-3 {
+        background-color: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .back-ground-4 {
+        width: 100% !important;
+      }
+      .ıcon-right-4 {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-left: 20% !important;
+        margin-bottom: 10% !important;
+      }
+      .ıcon-left-4 {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+      }
+      .font-size-12 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+      .font-size-13 {
+        font-size: 20px !important;
+      }
+      .card-4 {
+        background-color: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .back-ground-5 {
+        width: 100% !important;
+      }
+      .ıcon-right-5 {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-left: 8% !important;
+        margin-bottom: 10% !important;
+      }
+      .ıcon-left-5 {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+      }
+      .font-size-14 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+      .font-size-15 {
+        font-size: 20px !important;
+      }
+      .card-5 {
+        background-color: rgb(204, 202, 202) !important;
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .back-ground-6 {
+        width: 100% !important;
+      }
+      .ıcon-right-6 {
+        width: 70% !important;
+        background-color: white !important;
+        padding: 30px 30px 30px 30px !important;
+        margin-bottom: 10% !important;
+        margin-right: 10% !important;
+      }
+      .ıcon-left-6 {
+        background-color: orange !important;
+        color: white !important;
+        text-align: center !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        font-size: 30px !important;
+        width: 30% !important;
+        margin-left: 110px !important;
+        text-align: center !important;
+      }
+      .font-size-16 {
+        font-size: 20px !important;
+        letter-spacing: 2px !important;
+      }
+      .font-size-17 {
+        font-size: 20px !important;
+      }
+      .head-1 {
+        text-align: center !important;
+        width: 100% !important;
+        color: orange !important;
+        font-size: 70px !important;
+      }
+      .buton {
+        text-align: center !important;
+      }
+      .buton-1 {
+        border-radius: 25px !important;
+        font-size: 20px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        background-color: orange !important;
+        color: white !important;
+        cursor: pointer !important;
+      }
+      .buton-2 {
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        cursor: pointer !important;
+      }
+      .buton-3 {
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        cursor: pointer !important;
+      }
+      .buton-4 {
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        cursor: pointer !important;
+      }
+      .buton-5 {
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        cursor: pointer !important;
+      }
+      .buton-6 {
+        border-radius: 30px !important;
+        font-size: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        margin-right: 1% !important;
+        cursor: pointer !important;
+      }
+
+      .images-1 {
+        display: flex !important;
+        width: 100% !important;
+        margin-top: 5% !important;
+      }
+      .images-3 {
+        width: 30% !important;
+        margin-left: 90px !important;
+        cursor: pointer !important;
+      }
+      .images-4 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .images-5 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .images-2 {
+        display: flex !important;
+        width: 100% !important;
+      }
+      .images-6 {
+        width: 30% !important;
+        margin-left: 90px !important;
+        cursor: pointer !important;
+      }
+      .images-7 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .images-8 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .images-9 {
+        display: flex !important;
+        width: 100% !important;
+      }
+      .images-10 {
+        width: 30% !important;
+        margin-left: 90px !important;
+        cursor: pointer !important;
+      }
+      .images-11 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .images-12 {
+        width: 30% !important;
+        cursor: pointer !important;
+      }
+      .col-1 {
+        width: 100% !important;
+        margin-top: 5% !important;
+      }
+      .col-2 {
+        width: 100% !important;
+      }
+      .background-attachment {
+        background-attachment: fixed !important;
+        position: absolute !important;
+        width: 100% !important;
+      }
+
+      .col-3 {
+        width: 100% !important;
+        position: absolute !important;
+        margin-top: 10% !important;
+      }
+
+      .font-size-18 {
+        font-size: 70px !important;
+        text-align: center !important;
+        color: white !important;
+      }
+      .img-3 {
+        text-align: center !important;
+        margin-top: 50px !important;
+      }
+      .images-13 {
+        width: 5% !important;
+        border-radius: 50% !important;
+        margin-right: 50px !important;
+      }
+      .images-14 {
+        width: 5% !important;
+        border-radius: 50% !important;
+        margin-right: 50px !important;
+      }
+      .images-15 {
+        width: 5% !important;
+        border-radius: 50% !important;
+        margin-right: 50px !important;
+      }
+      .text-align-center {
+        text-align: center !important;
+        margin-top: 30px !important;
+        font-size: 20px !important;
+        color: white !important;
+      }
+      .letter-spacing {
+        letter-spacing: 2px !important;
+        text-align: center !important;
+        color: white !important;
+      }
+      .col-5 {
+        width: 100% !important;
+        margin-top: 70% !important;
+      }
+      .head-2 {
+        text-align: center !important;
+        color: orange !important;
+        font-size: 80px !important;
+        margin-bottom: 5% !important;
+      }
+      .images-16 {
+        width: 100% !important;
+      }
+      .images-17 {
+        width: 20% !important;
+        margin-left: 4% !important;
+      }
+      .images-18 {
+        width: 20% !important ;
+        margin-left: 4% !important;
+      }
+      .images-19 {
+        width: 20% !important;
+        margin-left: 4% !important;
+      }
+      .images-20 {
+        width: 20% !important;
+        margin-left: 4% !important;
+      }
+      .col-6 {
+        width: 100% !important;
+        margin-top: 10% !important;
+        background-color: rgb(204, 202, 202) !important;
+      }
+      .head-3 {
+        text-align: center !important;
+        font-size: 70px !important;
+        color: orange !important;
+      }
+      .list-style {
+        width: 75% !important;
+      }
+
+      .font {
+        font-size: 45px !important;
+        margin-left: 50% !important;
+        color: orange !important;
+      }
+      .list-style-none {
+        list-style: none !important;
+        font-size: 20px !important;
+        margin-left: 30% !important;
+      }
+
+      .col-7 {
+        width: 100% !important;
+        margin-right: 35% !important;
+      }
+      .font-1 {
+        width: 200% !important;
+        margin-left: 100% !important;
+        font-size: 25px !important;
+        color: rgb(66, 139, 235);
+        cursor: pointer !important;
+      }
+      .font-1:hover {
+        transition: 0.5s !important;
+        color: chocolate !important;
+      }
+      .font-2 {
+        width: 200% !important;
+        margin-left: 100% !important;
+      }
+      .col-8 {
+        width: 100% !important;
+        margin-right: 70% !important;
+      }
+
+      .font-3 {
+        font-size: 45px !important;
+        color: orange !important;
+        margin-right: 100% !important;
+      }
+      .list-styel-none-2 {
+        margin-right: 50% !important;
+        list-style: none !important;
+        font-size: 20px !important;
+      }
+      .col-9 {
+        width: 200% !important;
+      }
+
+      .font-4 {
+        width: 100% !important;
+        font-size: 25px !important;
+        margin-left: 50% !important ;
+        color: rgb(66, 139, 235);
+        cursor: pointer !important;
+      }
+      .font-4:hover {
+        transition: 0.5s !important;
+        color: chocolate !important;
+      }
+      .font-5 {
+        width: 100% !important;
+        margin-left: 50% !important ;
+      }
+      .col-10 {
+        width: 100% !important;
+        background-color: white !important;
+      }
+      .head-4 {
+        color: orange !important;
+        font-size: 80px !important;
+        text-align: center !important;
+      }
+      input[type="text"] {
+        width: 30% !important;
+        padding: 8px 16px !important;
+        margin: 4px 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+        margin-left: 20px !important;
+      }
+      #name {
+        color: black !important;
+        border-bottom: 1px solid black !important;
+      }
+      #name-4 {
+        color: black !important;
+        border-bottom: 1px solid black !important;
+        width: 93% !important;
+        height: 50% !important;
+      }
+      .form {
+        height: 20vh !important;
+        color: black !important;
+        text-align: left !important;
+        margin-top: 1% !important;
+        margin-left: 80px !important;
+      }
+      .buton-7 {
+        margin-left: 20px !important;
+        margin-top: 40px !important;
+      }
+      .buton-8 {
+        color: white !important;
+        background-color: orange !important;
+        font-size: 25px !important;
+        padding: 10px !important;
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="image">
-            <img class="img" src="İmages/1.jpg" alt="" />
+      <div class="image">
+        <img class="img" src="İmages/1.jpg" alt="" />
+      </div>
+      <div class="item-2">
+        <div class="item">
+          <h1 class="font-size"><strong class="color">GAMING</strong> Store</h1>
+          <div class="btn-1">
+            <button class="btn-2">Home</button>
+            <button class="btn-3">About</button>
+            <button class="btn-4">Latest Games</button>
+            <button class="btn-5">Team</button>
+            <button class="btn-6">Blog</button>
+            <button class="btn-7">Mail Us</button>
+          </div>
+          <h1 class="font-size-1">LOREM IPSUM</h1>
+          <p class="mb-2">In volutpat metus quis velit malesuada</p>
+          <button class="btn">Read More</button>
         </div>
-        <div class="item-2">
-            <div class="item">
-                <h1 class="font-size"><strong class="color">GAMING</strong> Store</h1>
-                <div class="btn-1">
-                    <button class="btn-2">Home</button>
-                    <button class="btn-3">About</button>
-                    <button class="btn-4">Latest Games</button>
-                    <button class="btn-5">Team</button>
-                    <button class="btn-6">Blog</button>
-                    <button class="btn-7">Mail Us</button>
-                </div>
-                <h1 class="font-size-1">LOREM IPSUM</h1>
-                <p class="mb-2">In volutpat metus quis velit malesuada</p>
-                <button class="btn">Read More</button>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="head">
-        <h1 class="font-size-2">Welcome</h1>
-        <p class="mb-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet
-        </p>
-        <hr class="hr" />
+      <h1 class="font-size-2">Welcome</h1>
+      <p class="mb-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at
+        placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor
+        eget elit. Lorem ipsum dolor sit amet
+      </p>
+      <hr class="hr" />
     </div>
     <div class="item-3">
-        <div class="image-2">
-            <img class="img-2" src="İmages/2.jpg" alt="" />
-        </div>
-        <div class="item-4">
-            <h1 class="font-size-3">- About Us</h1>
-            <p class="font-size-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet
-            </p>
-        </div>
+      <div class="image-2">
+        <img class="img-2" src="İmages/2.jpg" alt="" />
+      </div>
+      <div class="item-4">
+        <h1 class="font-size-3">- About Us</h1>
+        <p class="font-size-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at
+          placerat ante. Praesent nulla nunc, pretium dapibus efficitur in,
+          auctor eget elit. Lorem ipsum dolor sit amet
+        </p>
+      </div>
     </div>
     <div class="card">
-        <h1 class="font-size-5">Our Services</h1>
-        <div style="display: flex !important">
-            <div class="back-ground">
-                <div class="ıcon-right">
-                    <div class="ıcon-left">
-                        <i class="fa fa-gamepad" aria-hidden="true"></i>
-                    </div>
-                    <h5 class="font-size-6">Suspendısse</h5>
-                    <p class="font-size-7">
-                        Phasellus dapibus felis elit, sed accumsan arcu gravida vitae. Nullam aliquam erat at lectus ullamcorper, nec interdum neque hendrerit.
-                    </p>
-                </div>
+      <h1 class="font-size-5">Our Services</h1>
+      <div style="display: flex !important">
+        <div class="back-ground">
+          <div class="ıcon-right">
+            <div class="ıcon-left">
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
             </div>
-            <div class="card-1">
-                <div class="back-ground-2">
-                    <div class="ıcon-right-2">
-                        <div class="ıcon-left-2">
-                            <i class="fa fa-trophy" aria-hidden="true"></i>
-                        </div>
-                        <h5 class="font-size-8">ALIQUAM</h5>
-                        <p class="font-size-9">Phasellus dapibus felis elit, sed accumsan arcu gravida vitae. Nullam aliquam erat at lectus ullamcorper, nec interdum neque hendrerit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-2">
-                <div class="back-ground-3">
-                    <div class="ıcon-right-3">
-                        <div class="ıcon-left-3">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        <h5 class="font-size-10">CONSECTETUR</h5>
-                        <p class="font-size-11">Phasellus dapibus felis elit, sed accumsan arcu gravida vitae. Nullam aliquam erat at lectus ullamcorper, nec interdum neque hendrerit.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-3">
-                <div class="back-ground-4">
-                    <div class="ıcon-right-4">
-                        <div class="ıcon-left-4">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                        </div>
-                        <h5 class="font-size-12">BIBENDUM</h5>
-                        <p class="font-size-13"> Phasellus dapibus felis elit, sed accumsan arcu gravida vitae. Nullam aliquam erat at lectus ullamcorper, nec interdum neque hendrerit. </p>
-                    </div>
-                </div>
-            </div>
+            <h5 class="font-size-6">Suspendısse</h5>
+            <p class="font-size-7">
+              Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+              Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+              hendrerit.
+            </p>
+          </div>
         </div>
+        <div class="card-1">
+          <div class="back-ground-2">
+            <div class="ıcon-right-2">
+              <div class="ıcon-left-2">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+              </div>
+              <h5 class="font-size-8">ALIQUAM</h5>
+              <p class="font-size-9">
+                Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+                Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+                hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-2">
+          <div class="back-ground-3">
+            <div class="ıcon-right-3">
+              <div class="ıcon-left-3">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <h5 class="font-size-10">CONSECTETUR</h5>
+              <p class="font-size-11">
+                Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+                Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+                hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="card-3">
+      <div style="display: flex !important">
+        <div class="back-ground-4">
+          <div class="ıcon-right-4">
+            <div class="ıcon-left-4">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+            <h5 class="font-size-12">BIBENDUM</h5>
+            <p class="font-size-13">
+              Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+              Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+              hendrerit.
+            </p>
+          </div>
+        </div>
+        <div class="card-4">
+          <div class="back-ground-5">
+            <div class="ıcon-right-5">
+              <div class="ıcon-left-5">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+              </div>
+              <h5 class="font-size-14">VESTIBULUM</h5>
+              <p class="font-size-15">
+                Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+                Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+                hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-5">
+          <div class="back-ground-6">
+            <div class="ıcon-right-6">
+              <div class="ıcon-left-6">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <h5 class="font-size-16">FERMENTUM</h5>
+              <p class="font-size-17">
+                Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.
+                Nullam aliquam erat at lectus ullamcorper, nec interdum neque
+                hendrerit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h1 class="head-1">Our Games</h1>
+      <div class="buton">
+        <button class="buton-1">All</button>
+        <button class="buton-2">Category1</button>
+        <button class="buton-3">Category2</button>
+        <button class="buton-4">Category3</button>
+        <button class="buton-5">Category4</button>
+        <button class="buton-6">Category5</button>
+      </div>
+      <div class="images">
+        <div class="images-1">
+          <img class="images-3" src="İmages/3.jpg" alt="" />
+          <img class="images-4" src="İmages/4.jpg" alt="" />
+          <img class="images-5" src="İmages/5.jpg" alt="" />
+        </div>
+        <div class="images-2">
+          <img class="images-6" src="İmages/6.jpg" alt="" />
+          <img class="images-7" src="İmages/7.jpg" alt="" />
+          <img class="images-8" src="İmages/8.jpg" alt="" />
+        </div>
+        <div class="images-9">
+          <img class="images-10" src="İmages/9.jpg" alt="" />
+          <img class="images-11" src="İmages/10.jpg" alt="" />
+          <img class="images-12" src="İmages/11.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="col-2">
+        <img class="background-attachment" src="/İmages/1.jpg" alt="" />
+        <div class="col-3">
+          <h1 class="font-size-18">Testimonial</h1>
+          <div class="img-3">
+            <img class="images-13" src="/İmages/ts1.jpg" alt="" />
 
+            <img class="images-14" src="/İmages/ts2.jpg" alt="" />
+
+            <img class="images-15" src="/İmages/ts3.jpg" alt="" />
+          </div>
+          <div class="col-4">
+            <p class="text-align-center">
+              Proin blandit rhoncus metus porta tristique. Praesent suscipit in
+              erat a tempor. Nullam tempor lectus ex, a auctor orci ultricies
+              ac. Mauris sapien neque, condimentum sit
+            </p>
+            <h3 class="text-align-center, letter-spacing">MARY JANE</h3>
+            <p class="text-align-center">Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <h1 class="head-2">Amazing Team</h1>
+      <div style="display: flex !important">
+        <div class="images-16">
+          <img class="images-17" src="/İmages/t1.jpg" alt="" />
+          <img class="images-18" src="/İmages/t2.jpg" alt="" />
+          <img class="images-19" src="/İmages/t3.jpg" alt="" />
+          <img class="images-20" src="/İmages/t4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h1 class="head-3">Our Blog</h1>
+      <div style="display: flex !important">
+        <div class="list-style">
+          <h2 class="font">24/01</h2>
+          <ul class="list-style-none">
+            <li>Posted:Admin</li>
+            <li>Likes:31</li>
+            <li>Comments:(4)</li>
+          </ul>
+        </div>
+        <div class="col-7">
+          <h3 class="font-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            laudantium perferendis sed!
+          </h3>
+          <p class="font-2">
+            Sed ut feugiat felis. Morbi tempor ut nibh id consectetur. Morbi
+            turpis arcu, interdum at feugiat non, iaculis id dui. Cras
+            vestibulum dapibus volutpat. Fusce id molestie mauris, nec pulvinar
+            nibh.
+          </p>
+        </div>
+        <div class="col-8">
+          <div class="list-style-2">
+            <h2 class="font-3">09/12</h2>
+            <ul class="list-styel-none-2">
+              <li>Posted:Admin</li>
+              <li>Likes:81</li>
+              <li>Comments:(8)</li>
+            </ul>
+          </div>
+          <div class="col-9">
+            <h3 class="font-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              fugiat veritatis assumenda facere consequuntur debitis error!
+            </h3>
+            <p class="font-5">
+              Duis sodales eleifend laoreet. Vestibulum luctus venenatis massa,
+              in vulputate mi porta ac. Maecenas sollicitudin eros lectus, a
+              rutrum nisi vulputate quis. Proin tempus, lectus vitae gravida
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10">
+      <h1 class="head-4">Mail Us</h1>
+    </div>
+    <form class="form">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="text" id="name" placeholder="Your Email" />
+      <input type="text" id="name" placeholder="Subject" />
+      <input type="text" id="name-4" placeholder="Message..." />
+      <div class="buton-7">
+        <button class="buton-8">SUBMIT</button>
+      </div>
+    </form>
+    <div class=""></div>
+  </body>
 </html>
